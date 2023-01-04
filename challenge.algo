@@ -1,0 +1,49 @@
+
+
+
+//Challenge
+ALGORITHM Challenge
+
+VAR 
+        str : string := "the best in the world " ; 
+        count : INTEGER :=0 ; 
+        ch: CHAR := [o,i,y,e,a,u,O,I,Y,E,A,U];
+BEGIN
+    FOR i in str DO 
+    IF i in  ch THEN
+    count ++   ;
+    END_IF ;
+    END_FOR;
+    write (count);
+END
+
+// number of caracters in sentance 
+ALGORITHM nb-Challenge 
+   VAR 
+   str : string := "the best in the world" ; 
+   count : INTEGER : = 0 ; 
+     BEGIN
+     FOR (i:=0 ; i < str.length() ; i++) DO
+        IF (str.charAt[i] !=' ') THEN
+            count ++; 
+        END_IF
+     END_FOR
+     write (count) ;
+     END
+
+
+//number of words in sentence 
+
+ALGORITHM nb-words
+VAR
+     str : string := "the best in the world.";
+     count : integer := 1 ; 
+
+BEGIN
+        FOR i in str DO
+            IF (i == " ") THEN
+                count ++ ; 
+            END_IF
+        END_FOR
+        write (count);
+END
